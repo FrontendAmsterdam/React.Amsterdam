@@ -2043,12 +2043,6 @@ h6 {
     -webkit-background-clip: text;
     color: transparent;
     margin: 16px 0; }
-  .actions__sub-title {
-    font: 42px/1.36 "LatoSemiBold", sans-serif;
-    background: linear-gradient(150deg, #9f0, #00dd3b);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin: 16px 0; }
   .actions__desc {
     font: 16px/1.64 "Lato", sans-serif;
     color: #5f5f5f;
@@ -2091,8 +2085,17 @@ h6 {
     color: transparent;
     margin-bottom: 28px;
     margin: 0; }
+  .action__sub-title {
+    font: 42px/1.2 "LatoLight", sans-serif;
+    text-align: center;
+    background: linear-gradient(150deg, #9f0, #00dd3b);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 80px 0 20px; }
   .action__desc {
     font: 20px/1.6 "Lato", sans-serif; }
+    .action__desc.center {
+      text-align: center; }
   .action__p {
     margin: 12px 0; }
   .action__pic {
@@ -2156,7 +2159,7 @@ h6 {
   .action.open .action__roll-content {
     display: block; }
   .action.open .tour-plan__item.head {
-    margin: 14px 0 80px; }
+    margin: 14px 0 14px; }
   .action .btn-wrap {
     display: none;
     margin: 64px 0 30px; }
@@ -2184,6 +2187,37 @@ h6 {
       .action .btn-wrap {
         margin: 24px 0 30px; } }
 
+.own-tour__title {
+  font: 42px/1.2 "LatoLight", sans-serif;
+  text-align: center;
+  background: linear-gradient(150deg, #9f0, #00dd3b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 80px 0 20px; }
+
+.own-tour__desc {
+  font: 28px/1.5 "LatoLight", sans-serif;
+  text-align: center; }
+
+.own-tour__p {
+  margin: 12px 0; }
+
+.own-tour__pic {
+  margin: 15px;
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+@media only screen and (max-width: 680px) {
+  .own-tour__title {
+    font: 32px/1.32 "LatoLight", sans-serif; } }
+
+@media only screen and (max-width: 420px) {
+  .own-tour__p {
+    font: 20px/1.6 "LatoLight", sans-serif; }
+  .own-tour__pic {
+    margin: 15px 0 0; } }
+
 .tour-plan {
   padding: 0;
   margin: 0;
@@ -2191,7 +2225,7 @@ h6 {
   .tour-plan__item {
     position: relative;
     display: flex;
-    min-height: 180px;
+    min-height: 160px;
     margin: 18px 0;
     justify-content: space-between;
     /*background: #242725;*/ }
@@ -2226,7 +2260,8 @@ h6 {
     .tour-plan__left.align-right, .tour-plan__right.align-right {
       align-items: flex-end; }
   .tour-plan__right {
-    margin: 0 0 0 100px; }
+    margin: 0 0 0 100px;
+    font: 30px/1.6 "LatoLight", sans-serif; }
   .tour-plan__mid {
     position: absolute;
     left: 50%;
@@ -2246,10 +2281,11 @@ h6 {
     border-radius: 50%;
     overflow: hidden; }
   .tour-plan__title {
-    font: 20px/1.54 "Lato", sans-serif;
+    font: 38px/1.36 "LatoLight", sans-serif;
     font-weight: normal;
-    margin: 0 0 8px;
-    padding: 0; }
+    margin: auto;
+    padding: 0;
+    text-align: center; }
   .tour-plan__desc {
     font: 16px/1.64 "Lato", sans-serif;
     margin: 0;
@@ -2268,13 +2304,24 @@ h6 {
       .tour-plan__right {
         margin: 0 0 0 85px; }
       .tour-plan__title {
-        font: 18px/1.54 "Lato", sans-serif;
+        /*font: 18px/1.54 $lato;*/
         margin: 0 0 4px; }
       .tour-plan__desc {
         font-size: 16px; } }
   @media only screen and (max-width: 680px) {
     .tour-plan {
-      padding: 15px 0 40px; }
+      padding: 15px 0 40px;
+      /*.time{
+			order: 2;
+			align-items: center;
+			text-align: center;
+		}
+
+		.info{
+			order: 3;
+			align-items: center;
+			text-align: center;
+		}*/ }
       .tour-plan__item {
         flex-direction: column;
         margin: 40px 0 0; }
@@ -2284,11 +2331,18 @@ h6 {
         .tour-plan__item:after {
           top: -25px;
           bottom: auto;
-          height: 160px; }
+          height: 160px;
+          display: none; }
       .tour-plan__left, .tour-plan__right {
         margin: 0;
         align-items: center;
-        text-align: center; }
+        text-align: center;
+        z-index: 1;
+        position: relative; }
+      .tour-plan__right {
+        font: 22px/1.54 "LatoLight", sans-serif; }
+      .tour-plan__title {
+        font: 22px/1.54 "LatoLight", sans-serif; }
       .tour-plan__marker {
         margin: 12px auto; }
       .tour-plan__mid {
@@ -2300,15 +2354,7 @@ h6 {
         display: flex;
         order: 1; }
       .tour-plan__place-pic {
-        margin: 0 auto; }
-      .tour-plan .time {
-        order: 2;
-        align-items: center;
-        text-align: center; }
-      .tour-plan .info {
-        order: 3;
-        align-items: center;
-        text-align: center; } }
+        margin: 0 auto; } }
 
 .help {
   font: 16px/1.4 "Lato", sans-serif;
