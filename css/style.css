@@ -2043,6 +2043,12 @@ h6 {
     -webkit-background-clip: text;
     color: transparent;
     margin: 16px 0; }
+  .actions__sub-title {
+    font: 42px/1.36 "LatoSemiBold", sans-serif;
+    background: linear-gradient(150deg, #9f0, #00dd3b);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 16px 0; }
   .actions__desc {
     font: 16px/1.64 "Lato", sans-serif;
     color: #5f5f5f;
@@ -2330,6 +2336,39 @@ h6 {
   fill: #00dd3b; }
   .contacts .socials .socials__img:hover {
     fill: #7af80c; }
+
+.days {
+  display: flex;
+  justify-content: center;
+  margin: 38px 0;
+  flex-wrap: wrap; }
+  .days__item {
+    display: flex;
+    background: #272a28;
+    width: 269px;
+    padding: 5px 10px;
+    margin: 3px 3px 2px; }
+  .days__num {
+    text-align: left;
+    color: #717271;
+    font: 10px/1.6 "Lato", sans-serif;
+    text-transform: uppercase; }
+    .days__num span {
+      text-transform: none;
+      font: 24px/1.2 "Lato", sans-serif; }
+  .days__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font: 22px/1.4 "LatoLight", sans-serif;
+    flex: 1 1;
+    margin: 0;
+    padding: 0; }
+    .days__title span {
+      margin: auto;
+      background: linear-gradient(150deg, #9f0, #00dd3b);
+      -webkit-background-clip: text;
+      color: transparent; }
 
 /* Footer
 -----------------------------------------------------------------------------*/
