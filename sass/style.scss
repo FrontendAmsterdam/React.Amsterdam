@@ -14,10 +14,6 @@ body {
 	height: 100%;
 }
 
-html {
-	font-family: $lato;
-}
-
 body {
 	width: 100%;
 	background: #1a1d1b;
@@ -28,7 +24,7 @@ body {
 }
 
 strong {
-  font-family: $latoB;
+	font-weight: 900;
 }
 
 a {
@@ -86,8 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
-	font-family: $latoB;
+	font-weight: 900;
 }
 
 

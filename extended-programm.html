@@ -87,10 +87,10 @@
   </header><!-- .header -->
 
   <main class="content">
-    <section class="section intro" id="intro">
-      <video class="intro__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
-        <source src="video/video.webm" type="video/webm">
-        <source src="video/video.mp4" type="video/mp4">
+    <section class="section intro" id="intro" style="background: url(img/dummy_bg_dj.jpg) center center; background-size: cover;">
+      <video class="intro__video" preload="auto" muted autoplay loop poster="img/dummy_bg_dj.jpg" id="bgvid">
+        <source src="video/video_dj.webm" type="video/webm">
+        <source src="video/video_dj.mp4" type="video/mp4">
       </video>
 
       <div class="intro__overlay"></div>
@@ -101,7 +101,7 @@
           <a href="/" class="logo__link">React Amsterdam</a>
         </div>
 
-        <p class="intro__desc"><span class="scratch">April 13,</span> 2018, Kromhouthal, Amsterdam</p>
+        <p class="intro__desc"><span class="scratch green">April 13,</span> 2018, Kromhouthal, Amsterdam</p>
         <p class="intro__title">THE BIGGEST REACT<br/> CONFERENCE WORLDWIDE</p>
       </div>
 
@@ -124,18 +124,212 @@
             <p class="action__p">Two-track conference on all things React, gathering Front-end and Full-stack developers across the globe in the tech heart of Europe. After a very successful event in 2017, we're coming back with a new gig on April 13, 2018. Mark your calendars for the biggest React community event.</p>
           </div>
 
-          <a class="action__btn-more" href="#"></a>
+          <div class="tour-plan">
+            <!-- <div class="tour-plan__item head">
+              <div class="tour-plan__left">
+                Start point
+              </div>
+              <div class="tour-plan__mid">
+                <svg class="tour-plan__marker" role="img" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#tour-marker"></use>
+                </svg>
+              </div>
+              <div class="tour-plan__right time">
+                Plantage Kerklaan 40<br/>10:30 AM
+              </div>
+            </div> -->
+
+            <div class="action__roll-content">
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">West Church (Westerkerk)</h4>
+                  <p class="tour-plan__desc">This magnificent Renaissance church (circa 1620) is identified by its high tower (more than 245 feet high,) and is the site of Rembrandt's grave who was buried here in 1669.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place1.jpg" height="112" width="112" alt="West Church (Westerkerk)">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">11:30</time>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left time align-right">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">12:50</time>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place2.jpg" height="112" width="112" alt="Rijksmuseum">
+                  </div>
+                </div>
+                <div class="tour-plan__right info">
+                  <h4 class="tour-plan__title">Rijksmuseum</h4>
+                  <p class="tour-plan__desc">The completely renovated Rijksmuseum tells the story of the Netherlands from the Middle Ages to the 20th century.</p>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">Van Gogh Museum</h4>
+                  <p class="tour-plan__desc">Discover the world's largest collection of works by Dutch painter Vincent van Gogh at the Van Gogh Museum in Amsterdam, featuring masterpieces such as Sunflowers, The Potato Eaters, Almond Blossom and The Bedroom.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place3.jpg" height="112" width="112" alt="Van Gogh Museum">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">13:30</time>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left time align-right">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">15:00</time>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place4.jpg" height="112" width="112" alt="Vondelpark">
+                  </div>
+                </div>
+                <div class="tour-plan__right info">
+                  <h4 class="tour-plan__title">Vondelpark</h4>
+                  <p class="tour-plan__desc">Amsterdam's most famous park was designed and built in 1850 and today is a popular place for tourists and residents who can enjoy a variety of outdoor activities such as biking, hiking, jogging and picnicking.</p>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">The Jordaan</h4>
+                  <p class="tour-plan__desc">This charming neighborhood is Amsterdam's Greenwich Village, with its narrow alleys, leafy canals lined with 17th-century houses, quirky specialty shops, cafes and designer boutiques.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place5.jpg" height="112" width="112" alt="The Jordaan">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">17:00</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <a href="#" class="basic-btn" target="_blank">Call for local guides</a>
+          </div>
+
+          <button class="action__btn-more js-action-roll__btn" href="#"></button>
         </div>
 
         <div class="action">
           <h3 class="c-title action__title">Afterparty</h3>
-          <div class="action__desc">
+          <div class="action__desc clearfix">
             <div class="action__pic right"><img src="pic/afterparty_pic.png" height="312" width="350"></div>
             <p class="action__p">A full-day, two-track conference on all things React, gathering Front-end and Full-stack developers across the globe in the tech heart of Europe. After a very successful event in 2017, we're coming back with a new gig on April 13, 2018. Mark your calendars for the biggest React community event.</p>
 
           </div>
 
-          <a class="action__btn-more" href="#"></a>
+          <div class="tour-plan">
+            <!-- <div class="tour-plan__item head">
+              <div class="tour-plan__left">
+                Start point
+              </div>
+              <div class="tour-plan__mid">
+                <svg class="tour-plan__marker" role="img" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#tour-marker"></use>
+                </svg>
+              </div>
+              <div class="tour-plan__right time">
+                Plantage Kerklaan 40<br/>10:30 AM
+              </div>
+            </div> -->
+
+            <div class="action__roll-content">
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">West Church (Westerkerk)</h4>
+                  <p class="tour-plan__desc">This magnificent Renaissance church (circa 1620) is identified by its high tower (more than 245 feet high,) and is the site of Rembrandt's grave who was buried here in 1669.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place1.jpg" height="112" width="112" alt="West Church (Westerkerk)">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">11:30</time>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left time align-right">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">12:50</time>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place2.jpg" height="112" width="112" alt="Rijksmuseum">
+                  </div>
+                </div>
+                <div class="tour-plan__right info">
+                  <h4 class="tour-plan__title">Rijksmuseum</h4>
+                  <p class="tour-plan__desc">The completely renovated Rijksmuseum tells the story of the Netherlands from the Middle Ages to the 20th century.</p>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">Van Gogh Museum</h4>
+                  <p class="tour-plan__desc">Discover the world's largest collection of works by Dutch painter Vincent van Gogh at the Van Gogh Museum in Amsterdam, featuring masterpieces such as Sunflowers, The Potato Eaters, Almond Blossom and The Bedroom.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place3.jpg" height="112" width="112" alt="Van Gogh Museum">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">13:30</time>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left time align-right">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">15:00</time>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place4.jpg" height="112" width="112" alt="Vondelpark">
+                  </div>
+                </div>
+                <div class="tour-plan__right info">
+                  <h4 class="tour-plan__title">Vondelpark</h4>
+                  <p class="tour-plan__desc">Amsterdam's most famous park was designed and built in 1850 and today is a popular place for tourists and residents who can enjoy a variety of outdoor activities such as biking, hiking, jogging and picnicking.</p>
+                </div>
+              </div>
+              
+              <div class="tour-plan__item">
+                <div class="tour-plan__left info">
+                  <h4 class="tour-plan__title">The Jordaan</h4>
+                  <p class="tour-plan__desc">This charming neighborhood is Amsterdam's Greenwich Village, with its narrow alleys, leafy canals lined with 17th-century houses, quirky specialty shops, cafes and designer boutiques.</p>
+                </div>
+                <div class="tour-plan__mid">
+                  <div class="tour-plan__place-pic">
+                    <img src="pic/tour-place5.jpg" height="112" width="112" alt="The Jordaan">
+                  </div>
+                </div>
+                <div class="tour-plan__right time">
+                  <time class="tour-plan__time" datetime="2018-04-13T11:30">17:00</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <a href="#" class="basic-btn" target="_blank">Call for local guides</a>
+          </div>
+
+          <button class="action__btn-more js-action-roll__btn" href="#"></button>
         </div>
 
         <div class="action">

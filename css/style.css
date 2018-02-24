@@ -417,9 +417,6 @@ body {
   width: 100%;
   height: 100%; }
 
-html {
-  font-family: "Lato", sans-serif; }
-
 body {
   width: 100%;
   background: #1a1d1b;
@@ -429,7 +426,7 @@ body {
   line-height: 1.36; }
 
 strong {
-  font-family: "LatoBlack", sans-serif; }
+  font-weight: 900; }
 
 a {
   color: #fff;
@@ -478,8 +475,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
-  font-family: "LatoBlack", sans-serif; }
+  font-weight: 900; }
 
 /* Slider */
 .slick-slider {
@@ -606,7 +602,8 @@ h6 {
       margin: 46px 0 0; } }
 
 .basic-btn {
-  font: 24px/60px "LatoSemiBold", sans-serif;
+  font: 24px/60px "Lato", sans-serif;
+  font-weight: 700;
   display: inline-flex;
   line-height: 60px;
   color: #1a1d1b;
@@ -872,7 +869,8 @@ h6 {
       display: none; } }
 
 .c-title {
-  font: 48px/1.2 "LatoLight", sans-serif;
+  font: 48px/1.2 "Lato", sans-serif;
+  font-weight: 300;
   text-align: center; }
   .c-title.green {
     background: linear-gradient(150deg, #9f0, #00dd3b);
@@ -890,7 +888,8 @@ h6 {
   position: relative;
   width: 194px;
   margin: 0 auto;
-  font-family: "LatoBlack", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -935,7 +934,8 @@ h6 {
     margin: 60px 0 52px;
     text-align: center;
     color: #00dd3b;
-    font: 110px/1 "LatoBlack", sans-serif;
+    font: 110px/1 "Lato", sans-serif;
+    font-weight: 900;
     text-transform: lowercase;
     letter-spacing: 0.03em; }
   .section__subtitle {
@@ -961,7 +961,8 @@ h6 {
   margin: 35px 0 35px;
   text-align: center; }
   .socials-wrap__title {
-    font: 39px/1.6 "LatoLight", sans-serif;
+    font: 39px/1.6 "Lato", sans-serif;
+    font-weight: 300;
     margin: 30px 0 22px; }
   .socials-wrap .socials {
     margin: 46px 0 42px;
@@ -1016,7 +1017,8 @@ h6 {
 
 		&__title {
 			margin: 12px 0 20px;
-			font: 40px/1.16 $latoB;
+			font: 40px/1.16 	$lato;
+	font-weight: 900;
 		}
 
 		.btn-wrap{
@@ -1070,11 +1072,16 @@ h6 {
         top: 50%;
         transform: translate(-50%, -50%);
         background: url(../img/date-scratch.png);
+        background-size: cover;
         z-index: -1;
-        opacity: 0.60;
-        background-size: cover; }
+        opacity: 0.60; }
+      .intro__desc .scratch.green:after {
+        background: url(../img/date-scratch_green.png);
+        background-size: cover;
+        opacity: 0.40; }
   .intro__title {
-    font: 100px/1.16 "LatoBlack", sans-serif;
+    font: 100px/1.16 "Lato", sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     margin: 25px 0 38px;
     letter-spacing: 0.06em; }
@@ -1107,12 +1114,14 @@ h6 {
       font: 16px/1.42 "Lato", sans-serif; }
     .intro__title {
       margin: 12px 0 20px;
-      font: 26px/1.16 "LatoBlack", sans-serif; } }
+      font: 26px/1.16 "Lato", sans-serif;
+      font-weight: 900; } }
 
 .event {
   text-align: center; }
   .event__title {
-    font: 68px/1.12 "LatoBlack", sans-serif;
+    font: 68px/1.12 "Lato", sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     margin: 14px 0 46px;
     background: linear-gradient(150deg, #99ff00, #00dd3b);
@@ -1132,13 +1141,16 @@ h6 {
         background: url(../img/leaf.svg) center center no-repeat;
         background-size: 100% 100%; }
   .event__subtitle {
-    font: 34px/1.4 "LatoLight", sans-serif;
+    font: 34px/1.4 "Lato", sans-serif;
+    font-weight: 300;
     margin: 58px 0 14px; }
   .event__sep-title {
-    font: 36px/1.4 "LatoLight", sans-serif;
+    font: 36px/1.4 "Lato", sans-serif;
+    font-weight: 300;
     margin: 68px 0 14px; }
   .event__p {
-    font: 20px/1.6 "LatoLight", sans-serif;
+    font: 20px/1.6 "Lato", sans-serif;
+    font-weight: 300;
     margin: 46px 0 14px;
     max-width: 960px;
     margin: 18px auto; }
@@ -1188,7 +1200,8 @@ h6 {
   .event-stats__num {
     color: #00dd3b;
     font-size: 84px;
-    font-family: "LatoLight", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     line-height: 1;
     margin: 0 0 0 -3px;
     white-space: nowrap; }
@@ -1227,7 +1240,8 @@ h6 {
       .event-stats__num {
         color: #00dd3b;
         font-size: 62px;
-        font-family: "LatoLight", sans-serif;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
         line-height: 1;
         margin: 0 0 0 -3px; }
       .event-stats__desc {
@@ -1336,26 +1350,29 @@ h6 {
     background: #1a1d1b;
     cursor: pointer; }
 
-.location__logo {
-  width: 478px;
-  height: 326px;
-  max-width: 100%;
-  background: url(../img/location_logo.png) center center no-repeat;
-  background-size: cover;
-  margin: 51px auto 66px;
-  background-size: contain; }
-  @media only screen and (max-width: 480px) {
-    .location__logo {
-      margin: 30px 0;
-      height: 200px; } }
-
-.location .container {
-  position: relative;
-  z-index: 1; }
+.location {
+  min-height: 1100px; }
+  .location__logo {
+    width: 478px;
+    height: 326px;
+    max-width: 100%;
+    background: url(../img/location_logo.png) center center no-repeat;
+    background-size: cover;
+    margin: 51px auto 66px;
+    background-size: contain; }
+  .location .container {
+    position: relative;
+    z-index: 1; }
+  @media only screen and (max-width: 680px) {
+    .location {
+      min-height: 740px; }
+      .location__logo {
+        margin: 30px auto;
+        height: 200px; } }
 
 .slider-nav {
   position: absolute;
-  top: 25%;
+  top: 253px;
   left: 10px;
   right: 10px;
   z-index: 1; }
@@ -1401,20 +1418,27 @@ h6 {
   height: 100%; }
 
 .map {
-  position: relative;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 492px;
-  max-width: 1110px; }
+  width: 100%;
+  max-width: 1110px;
+  z-index: 2; }
   .map__desc {
     position: absolute;
     left: 68px;
     bottom: 60px;
     z-index: 1; }
   .map__title {
-    font: 24px/1.2 "LatoBlack", sans-serif;
+    font: 24px/1.2 "Lato", sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     margin: 0; }
   .map__address {
-    font: 24px/1.36 "LatoLight", sans-serif;
+    font: 24px/1.36 "Lato", sans-serif;
+    font-weight: 300;
     margin: 17px 0 0; }
   .map__btn {
     height: 54px;
@@ -1427,14 +1451,15 @@ h6 {
     max-width: 1100px; }
     .map #map .gm-style-cc {
       display: none; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 680px) {
     .map {
       height: 320px; }
       .map__desc {
         left: 20px;
         bottom: 20px; }
       .map__address {
-        font: 18px/1.36 "LatoLight", sans-serif;
+        font: 18px/1.36 "Lato", sans-serif;
+        font-weight: 300;
         margin: 0; }
       .map__btn {
         margin: 150px 0 0; }
@@ -1504,16 +1529,19 @@ h6 {
     margin: 2px 0 16px;
     color: #969696; }
   .speakers-list__desc {
-    font: 16px/1.68 "LatoLight", sans-serif;
+    font: 16px/1.68 "Lato", sans-serif;
+    font-weight: 300;
     color: #969696;
     margin: 16px 0; }
     .speakers-list__desc a {
       color: #bdbdbd; }
   .speakers-list__p {
-    font: 16px/1.68 "LatoLight", sans-serif;
+    font: 16px/1.68 "Lato", sans-serif;
+    font-weight: 300;
     margin: 16px 0; }
   .speakers-list__propose-new {
-    font: 26px/1.32 "LatoLight", sans-serif;
+    font: 26px/1.32 "Lato", sans-serif;
+    font-weight: 300;
     margin: 11px 0px; }
   .speakers-list__btn {
     display: block;
@@ -1653,7 +1681,8 @@ h6 {
     .schedule-list__item:last-child:before {
       background: #1a1d1b; }
   .schedule-list__time {
-    font: 22px/1.2 "LatoLight", sans-serif;
+    font: 22px/1.2 "Lato", sans-serif;
+    font-weight: 300;
     max-width: 9%;
     width: 100%;
     padding: 1px 0 0;
@@ -1774,7 +1803,8 @@ h6 {
 .sponsors-block {
   text-align: center; }
   .sponsors-block__desc {
-    font: 36px/1.28 "LatoLight", sans-serif;
+    font: 36px/1.28 "Lato", sans-serif;
+    font-weight: 300;
     font-weight: 300;
     margin: 62px 0 42px;
     flex-grow: 1;
@@ -1842,11 +1872,13 @@ h6 {
   .workshop-info__right {
     flex: 1 1; }
   .workshop-info__name {
-    font: 22px/1.48 "LatoBlack", sans-serif;
+    font: 22px/1.48 "Lato", sans-serif;
+    font-weight: 900;
     margin: 0;
     color: #fff; }
   .workshop-info__title {
-    font: 22px/1.48 "LatoSemiBold", sans-serif;
+    font: 22px/1.48 "Lato", sans-serif;
+    font-weight: 700;
     margin: 0 0 10px;
     color: #fff; }
   .workshop-info__subj {
@@ -1854,7 +1886,8 @@ h6 {
     margin: 0;
     color: #fff; }
   .workshop-info__p {
-    font: 16px/1.64 "LatoLight", sans-serif;
+    font: 16px/1.64 "Lato", sans-serif;
+    font-weight: 300;
     margin: 0;
     color: #969696; }
   @media only screen and (max-width: 680px) {
@@ -1866,7 +1899,8 @@ h6 {
     .workshop-info__right {
       flex: 1; }
     .workshop-info__name {
-      font: 22px/1.64 "LatoBlack", sans-serif;
+      font: 22px/1.64 "Lato", sans-serif;
+      font-weight: 900;
       margin: 0 0 8px;
       color: #fff; } }
 
@@ -1970,7 +2004,8 @@ h6 {
   margin: 0 auto;
   padding: 0 10px; }
   .guarants__sub-title {
-    font: 30px/1.36 "LatoLight", sans-serif;
+    font: 30px/1.36 "Lato", sans-serif;
+    font-weight: 300;
     margin: 0; }
   .guarants__for-wrap {
     display: flex;
@@ -1981,7 +2016,8 @@ h6 {
     flex: 0 1 380px;
     margin: 0 10px; }
   .guarants__p {
-    font: 16px/1.64 "LatoLight", sans-serif;
+    font: 16px/1.64 "Lato", sans-serif;
+    font-weight: 300;
     margin: 25px 0 0;
     color: #969696; }
   .guarants .c-title {
@@ -2038,7 +2074,8 @@ h6 {
     height: auto;
     display: block; }
   .actions__title {
-    font: 22px/1.36 "LatoSemiBold", sans-serif;
+    font: 22px/1.36 "Lato", sans-serif;
+    font-weight: 700;
     background: linear-gradient(150deg, #9f0, #00dd3b);
     -webkit-background-clip: text;
     color: transparent;
@@ -2078,7 +2115,8 @@ h6 {
   .action:last-child {
     margin-bottom: 0; }
   .action__title {
-    font: 63px/1.2 "LatoLight", sans-serif;
+    font: 63px/1.2 "Lato", sans-serif;
+    font-weight: 300;
     text-align: center;
     background: linear-gradient(150deg, #9f0, #00dd3b);
     -webkit-background-clip: text;
@@ -2086,7 +2124,9 @@ h6 {
     margin-bottom: 28px;
     margin: 0; }
   .action__desc {
-    font: 20px/1.6 "Lato", sans-serif; }
+    font: 20px/1.6 "Lato", sans-serif;
+    position: relative;
+    z-index: 2; }
   .action__p {
     margin: 12px 0; }
   .action__pic {
@@ -2206,9 +2246,11 @@ h6 {
       .tour-plan__item.head:after {
         display: none; }
       .tour-plan__item.head .tour-plan__left {
-        font: 40px/1.36 "LatoLight", sans-serif; }
+        font: 40px/1.36 "Lato", sans-serif;
+        font-weight: 300; }
       .tour-plan__item.head .tour-plan__right {
-        font: 32px/1.36 "LatoLight", sans-serif; }
+        font: 32px/1.36 "Lato", sans-serif;
+        font-weight: 300; }
   .tour-plan__left, .tour-plan__right {
     display: flex;
     flex-wrap: wrap;
@@ -2250,7 +2292,8 @@ h6 {
     padding: 0;
     color: #5f5f5f; }
   .tour-plan__time {
-    font: 32px/1.56 "LatoLight", sans-serif; }
+    font: 32px/1.56 "Lato", sans-serif;
+    font-weight: 300; }
   @media only screen and (max-width: 1000px) {
     .tour-plan {
       padding: 15px 0 10px; }
@@ -2352,7 +2395,8 @@ h6 {
   display: flex;
   margin: 100px auto;
   justify-content: center;
-  font: 24px/1.18 "LatoLight", sans-serif;
+  font: 24px/1.18 "Lato", sans-serif;
+  font-weight: 300;
   align-content: center;
   align-items: center; }
   .f-logo__link {

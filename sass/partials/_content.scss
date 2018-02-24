@@ -55,7 +55,8 @@
 }
 
 .c-title{
-	font: 48px/1.2 $latoL;
+	font: 48px/1.2 $lato;
+	font-weight: 300;
 	text-align: center;
 
 	&.green{
@@ -78,7 +79,8 @@
 	position: relative;
 	width: 194px;
 	margin: 0 auto;
-	font-family: $latoB;
+	font-family: 	$lato;
+	font-weight: 900;
 	font-size: 24px;
 	text-transform: uppercase;
 	text-align: center;
@@ -136,7 +138,8 @@
 		margin: 60px 0 52px;
 		text-align: center;
 		color: $clr-green;
-		font: 110px/1 $latoB;
+		font: 110px/1 	$lato;
+		font-weight: 900;
 		text-transform: lowercase;
 		letter-spacing: 0.03em;
 	}
@@ -175,7 +178,8 @@
 	text-align: center;
 
 	&__title{
-		font: 39px/1.6 $latoL;
+		font: 39px/1.6 	$lato;
+		font-weight: 300;
 		margin: 30px 0 22px;
 	}
 
@@ -287,7 +291,7 @@
 
 		.scratch{
 			position: relative;
-
+			
 			&:after{
 				content: '';
 				/*width: 136px;
@@ -299,15 +303,25 @@
 				top: 50%;
 				transform: translate(-50%, -50%);
 				background: url(../img/date-scratch.png);
+				background-size: cover;
 				z-index: -1;
 				opacity: 0.60;
-				background-size: cover;
+			}
+
+			&.green{
+			
+				&:after{
+					background: url(../img/date-scratch_green.png);
+					background-size: cover;
+					opacity: 0.40;
+				}
 			}
 		}
 	}
 
 	&__title {
-		font: 100px/1.16 $latoB;
+		font: 100px/1.16 $lato;
+		font-weight: 900;
 		text-transform: uppercase;
 		margin: 25px 0 38px;
 		letter-spacing: 0.06em;
@@ -368,7 +382,8 @@
 
 		&__title {
 			margin: 12px 0 20px;
-			font: 40px/1.16 $latoB;
+			font: 40px/1.16 	$lato;
+	font-weight: 900;
 		}
 
 		.btn-wrap{
@@ -394,7 +409,8 @@
 
 		&__title {
 			margin: 12px 0 20px;
-			font: 26px/1.16 $latoB;
+			font: 26px/1.16 $lato;
+			font-weight: 900;
 		}
 	}
 }
@@ -403,7 +419,8 @@
 	text-align: center;
 
 	&__title{
-		font: 68px/1.12 $latoB;
+		font: 68px/1.12 $lato;
+		font-weight: 900;
 		text-transform: uppercase;
 		margin: 14px 0 46px;
 
@@ -430,29 +447,32 @@
 	}
 
 	&__subtitle{
-		font: 34px/1.4 $latoL;
+		font: 34px/1.4 $lato;
+		font-weight: 300;
 		margin: 58px 0 14px;
 	}
 
 	&__sep-title{
-		font: 36px/1.4 $latoL;
+		font: 36px/1.4 $lato;
+		font-weight: 300;
 		margin: 68px 0 14px;
 	}
 
 	&__p{
-		font: 20px/1.6 $latoL;
+		font: 20px/1.6 $lato;
+		font-weight: 300;
 		margin: 46px 0 14px;
 		max-width: 960px;
 		margin: 18px auto;
 	}
 
-  a {
-    text-decoration: underline;
+	a {
+		text-decoration: underline;
 
-    &:hover {
-      text-decoration: none;
-    }
-  }
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
 	.container{
 		max-width: 1260px;
@@ -522,7 +542,8 @@
 	&__num{
 		color: $clr-green;
 		font-size: 84px;
-		font-family: $latoL;
+		font-family: $lato;
+		font-weight: 300;
 		line-height: 1;
 		margin: 0 0 0 -3px;
 		white-space: nowrap;
@@ -548,7 +569,7 @@
 		fill: #3cea24;
 		vertical-align: top;
 		margin: 28px 0 0 10px;
-  		animation: beat 1.4s infinite ease;
+			animation: beat 1.4s infinite ease;
 	}
 
 	@keyframes beat {
@@ -569,7 +590,8 @@
 		&__num{
 			color: $clr-green;
 			font-size: 62px;
-			font-family: $latoL;
+			font-family: $lato;
+			font-weight: 300;
 			line-height: 1;
 			margin: 0 0 0 -3px;
 		}
@@ -732,6 +754,7 @@
 }
 
 .location{
+	min-height: 1100px;
 
 	&__logo{
 		width: 478px;
@@ -741,22 +764,27 @@
 		background-size: cover;
 		margin: 51px auto 66px;
 		background-size: contain;
-
-		@media only screen and (max-width : 480px) {
-			margin: 30px 0;
-			height: 200px;
-		}
 	}
 
 	.container{
 		position: relative;
 		z-index: 1;
 	}
+
+	@media only screen and (max-width : 680px) {
+
+		min-height: 740px;
+
+		&__logo{
+			margin: 30px auto;
+			height: 200px;
+		}
+	}
 }
 
 .slider-nav{
 	position: absolute;
-	top: 25%;
+	top: 253px;
 	left: 10px;
 	right: 10px;
 	z-index: 1;
@@ -777,12 +805,12 @@
 		cursor: pointer;
 	}
 
-    &.slick-disabled {
-      display: none !important;
-    }
+		&.slick-disabled {
+			display: none !important;
+		}
 
 	.slick-next{
-    	background: url(../img/arrow_r.svg) center center no-repeat;
+			background: url(../img/arrow_r.svg) center center no-repeat;
 		background-size: cover;
 		left: auto;
 		right: 0;
@@ -811,13 +839,19 @@
 
 .slick-list,
 .slick-track {
-    height: 100%;
+		height: 100%;
 }
 
 .map{
-	position: relative;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	
+	transform: translateX(-50%);
 	height: 492px;
+	width: 100%;
 	max-width: 1110px;
+	z-index: 2;
 
 	&__desc{
 		position: absolute;
@@ -827,13 +861,15 @@
 	}
 
 	&__title{
-		font: 24px/1.2 $latoB;
+		font: 24px/1.2 	$lato;
+	font-weight: 900;
 		text-transform: uppercase;
 		margin: 0;
 	}
 
 	&__address{
-		font: 24px/1.36 $latoL;
+		font: 24px/1.36 	$lato;
+	font-weight: 300;
 		margin: 17px 0 0;
 	}
 
@@ -854,7 +890,7 @@
 		}
 	}
 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width : 680px) {
 		height: 320px;
 
 		&__desc{
@@ -863,7 +899,8 @@
 		}
 
 		&__address{
-			font: 18px/1.36 $latoL;
+			font: 18px/1.36 $lato;
+			font-weight: 300;
 			margin: 0;
 		}
 
@@ -966,7 +1003,8 @@
 	}
 
 	&__desc{
-		font: 16px/1.68 $latoL;
+		font: 16px/1.68 $lato;
+		font-weight: 300;
 		color: #969696;
 		margin: 16px 0;
 
@@ -976,12 +1014,14 @@
 	}
 
 	&__p{
-		font: 16px/1.68 $latoL;
+		font: 16px/1.68 $lato;
+		font-weight: 300;
 		margin: 16px 0;
 	}
 
 	&__propose-new{
-		font: 26px/1.32 $latoL;
+		font: 26px/1.32 $lato;
+		font-weight: 300;
 		margin: 11px 0px;
 	}
 
@@ -1180,7 +1220,7 @@
 		min-height: 174px;
 		display: flex;
 
-    // temp before schedule
+		// temp before schedule
 		//&:before{
 		//	content: '';
 		//	position: absolute;
@@ -1191,7 +1231,7 @@
 		//	background: #313432;
 		//	transform: translateY(30px);
 		//}
-        //
+				//
 		//&:after{
 		//	width: 8px;
 		//	height: 8px;
@@ -1224,7 +1264,8 @@
 	}
 
 	&__time{
-		font: 22px/1.2 $latoL;
+		font: 22px/1.2 	$lato;
+	font-weight: 300;
 		max-width: 9%;
 		width: 100%;
 		padding: 1px 0 0;
@@ -1420,7 +1461,8 @@
 	text-align: center;
 
 	&__desc{
-		font: 36px/1.28 $latoL;
+		font: 36px/1.28 	$lato;
+	font-weight: 300;
 		font-weight: 300;
 		margin: 62px 0 42px;
 		flex-grow: 1;
@@ -1532,13 +1574,15 @@
 	}
 
 	&__name{
-		font: 22px/1.48 $latoB;
+		font: 22px/1.48 $lato;
+		font-weight: 900;
 		margin: 0;
 		color: #fff;
 	}
 
 	&__title{
-		font: 22px/1.48 $latoSB;
+		font: 22px/1.48 $lato;
+		font-weight: 700;
 		margin: 0 0 10px;
 		color: #fff;
 	}
@@ -1550,7 +1594,8 @@
 	}
 
 	&__p{
-		font: 16px/1.64 $latoL;
+		font: 16px/1.64 $lato;
+		font-weight: 300;
 		margin: 0;
 		color: #969696;
 	}
@@ -1571,7 +1616,8 @@
 		}
 
 		&__name{
-			font: 22px/1.64 $latoB;
+			font: 22px/1.64 $lato;
+			font-weight: 900;
 			margin: 0 0 8px;
 			color: #fff;
 		}
@@ -1741,7 +1787,8 @@
 	}
 
 	&__sub-title{
-		font: 30px/1.36 $latoL;
+		font: 30px/1.36 $lato;
+		font-weight: 300;
 		margin: 0;
 	}
 
@@ -1758,7 +1805,8 @@
 	}
 
 	&__p{
-		font: 16px/1.64 $latoL;
+		font: 16px/1.64 $lato;
+		font-weight: 300;
 		margin: 25px 0 0;
 		color: #969696;
 	}
@@ -1842,7 +1890,8 @@
 	}
 
 	&__title{
-		font: 22px/1.36 $latoSB;
+		font: 22px/1.36 $lato;
+		font-weight: 700;
 		background: linear-gradient(150deg,#9f0,#00dd3b);
 		-webkit-background-clip: text;
 		color: transparent;
@@ -1907,7 +1956,8 @@
 	}
 
 	&__title{
-		font: 63px/1.2 $latoL;
+		font: 63px/1.2 $lato;
+		font-weight: 300;
 		text-align: center;
 		background: linear-gradient(150deg,#9f0,#00dd3b);
 		-webkit-background-clip: text;
@@ -1918,6 +1968,8 @@
 
 	&__desc{
 		font: 20px/1.6 $lato;
+		position: relative;
+		z-index: 2;
 	}
 
 	&__p{
@@ -2095,11 +2147,13 @@
 			}
 
 			.tour-plan__left{
-				font: 40px/1.36 $latoL;
+				font: 40px/1.36 $lato;
+				font-weight: 300;
 			}
 
 			.tour-plan__right{
-				font: 32px/1.36 $latoL;
+				font: 32px/1.36 $lato;
+				font-weight: 300;
 			}
 		}
 	}
@@ -2162,7 +2216,8 @@
 	}
 
 	&__time{
-		font: 32px/1.56 $latoL;
+		font: 32px/1.56 $lato;
+		font-weight: 300;
 	}
 
 	@media only screen and (max-width : 1000px) {
